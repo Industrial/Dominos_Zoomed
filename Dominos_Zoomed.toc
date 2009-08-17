@@ -1,2 +1,3 @@
 ## Interface: 30200
+## Dependencies: Dominos
 addon.lua
