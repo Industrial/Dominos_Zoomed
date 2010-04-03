@@ -12,12 +12,18 @@ local function set_button_look_zoomed (button)
 end
 
 local old = Dominos.ActionButton.New
-function new (self, id)
+local function new (self, id)
 	local button = old(self, id)
-
 	set_button_look_zoomed(button)
-
 	return button
 end
 Dominos.ActionButton.New = new
+
+--[[local old = Dominos.PetButton.New
+local function new (self, id)
+	local button = old(self, id)
+	set_button_look_zoomed(button)
+	return button
+end
+Dominos.PetButton.New = new]]
 
